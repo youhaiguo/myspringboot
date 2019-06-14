@@ -11,6 +11,7 @@ public class MyspringbootApplicationTests {
 
     @Test
     public void contextLoads() {
+        System.out.println("main test");
     }
 
 }

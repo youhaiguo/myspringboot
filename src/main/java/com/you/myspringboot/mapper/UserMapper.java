@@ -1,15 +1,17 @@
 package com.you.myspringboot.mapper;
 
 import com.you.myspringboot.pojo.User;
-import org.apache.ibatis.annotations.Mapper;
+
+
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
+import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
-@Mapper
+
 @Component
-public interface UserMapper {
+public interface UserMapper extends Mapper<User> {
 
     /**
      * mybatis 注解映射

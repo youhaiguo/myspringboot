@@ -6,10 +6,12 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Properties;
 
-@Configuration  //表示该类是用来做配置的
+@Configuration
+//表示该类是用来做配置的（相当于Spring配置文件中的<beans />标签，里面可以配置bean）
 public class PageHelperConfig {
 
-    @Bean  //表示启动PageHelper这个拦截器
+    @Bean
+    //表示启动PageHelper这个拦截器（相当于Spring配置文件中的<bean />标签可以在Spring容器中注入一个bean）
     public PageHelper pageHelper() {
 
         PageHelper pageHelper = new PageHelper();

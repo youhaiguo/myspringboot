@@ -43,4 +43,10 @@ public class UploadController {
         }
         return "上传成功";
     }
+
+    @GetMapping("thymeleaf")
+    public String thymeleafTest() {
+
+        return "hello";
+    }
 }
